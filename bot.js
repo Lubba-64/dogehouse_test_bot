@@ -80,8 +80,13 @@ function CheckCommands(msg){
                     remind, \n
                     roll, \n
                     spam 
+                    github
                     `
                     ,{mentionUser: false, whispered: true});
+                    msg.delete();
+                    break;
+                case "github":
+                    msg.reply("https://github.com/Lubba-64/dogehouse_test_bot/blob/main/bot.js",{mentionUser: false, whispered: true});
                     msg.delete();
                     break;
                 case "remind":
